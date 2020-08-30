@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -32,7 +36,7 @@
                 <a class="nav-link" href="/projects">Projects</a>
               </li>
             <li class="nav-item">
-               <a class="nav-link" href="c">Contact Me</a>
+               <a class="nav-link" href="#c">Contact Me</a>
             </li>
           </ul>
           
@@ -44,57 +48,88 @@
          </div>
 
          <div class="intro-wrapper">
-             <div class="nav-wrapper">
-                 Nav
-             </div> 
-             <div class="left-column">
-                left-column
+            <div class="left-column">
+                <img id="profile_pic" src="assests/img/mypic.jpg">
+               
             </div>
             <div class="right-column">
-                right-column
-            </div>
+              <div id="preview-shadow">  
+               <div id="preview">
+                 <div id="corner-tl" class="corner"></div>
+                 <div id="corner-tr" class="corner"></div>
+                 <h3>About Me</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, necessitatibus libero. Nisi ad quam corporis dicta magnam, odit dolorem. Incidunt.</p>
+                 <div id="corner-bl" class="corner"></div>
+                 <div id="corner-br" class="corner"></div>
+               </div>
+               </div>
 
+            </div>
          </div>
     </section>
     <section class="s2">
         <div class="main-container">
-            About
-        </div>
-    </section>
-    <section class="s1">
-        <div class="main-container">
-            Skills
-        </div>
+           <div class="about-wrapper">
+             <div class="about-me"> 
+               <a target="_blank" href="assests/RiyaArora_Resume.pdf">Download Resume</a>
+             </div>
+            
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h4 id="s">SKILLS</h4>
+        </div>
+        <div id="skills" class="skills-wrapper">
+          <ul>
+            <h3>Programming Languages</h3>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C/C++</li>
+          </ul>
+          <ul>
+           <h3>Frameworks</h3>
+           <li>Django</li>
+           <li>Hadoop</li>
+           <li>React</li>
+         </ul>
+
         </div>
     </section>
-    <div class="container">
-        <br>
-        <h2 href="c"><center>CONTACT ME </center></h2><br>
-        <h4><center>Got a project for me?</center></h4>
-      <form action="/contact_me" method="post">
-          
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
-            
-          </div>
-          <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
-              
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Tell me about the project you want to develop</label>
-              <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <section class="s2">
+      <div class="main-container">
+         Projects
       </div>
+          
+  </section>
+    <section class="s2">
+        <div class="main-container">
+            <div class="container">
+              <br>
+              <h2 id="c"><center>CONTACT ME </center></h2><br>
+              <h4><center>Got a project for me?</center></h4>
+            <form action="/contact_me" method="post">
+                
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
+                  
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Tell me about the project you want to develop</label>
+                    <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+        </div>
+    </section>
+    
     <footer class="bg-dark text-light position-relative fixed-bottom">
         <div class="centerdiv">
             <a href="https://www.linkedin.com/in/riya-arora-9b52651b0/" target="_blank">
