@@ -84,10 +84,11 @@ grid-template-areas:
 #profile_pic{
     display:block;
     margin:0 auto;
-    height: 250px;
-    width:200px;
-    object-fit:auto;
-    border: 5px solid var(--mainText);
+    height: 300px;
+    width:250px;
+    border-radius:50%;
+    object-fit:fill;
+    border: 2px solid var(--mainText);
 }
 .right-column{
     grid-area:right-column;
